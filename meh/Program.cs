@@ -152,12 +152,48 @@ namespace meh
                         {
                             Console.Write("What to add?");
                             string input1 = Console.ReadLine();
-                            int add1, add2;
+                            int add1, add2, ans;
                             Int32.TryParse(input1, out add1);
                             Console.Write("And what?");
                             string input2 = Console.ReadLine();
                             Int32.TryParse(input2, out add2);
-                            int ans = add1 + add2;
+                            ans = add1 + add2;
+                            Console.WriteLine("The answer is " + ans);
+                        }
+                        else if (string.Equals(command, "subtract"))
+                        {
+                            Console.Write("What to subtract?");
+                            string input1 = Console.ReadLine();
+                            int sub1, sub2, ans;
+                            Int32.TryParse(input1, out sub1);
+                            Console.Write("And what?");
+                            string input2 = Console.ReadLine();
+                            Int32.TryParse(input2, out sub2);
+                            ans = sub1 - sub2;
+                            Console.WriteLine("The answer is " + ans);
+                        }
+                        else if (string.Equals(command, "multiply"))
+                        {
+                            Console.Write("What to multiply?");
+                            string input1 = Console.ReadLine();
+                            int mul1, mul2, ans;
+                            Int32.TryParse(input1, out mul1);
+                            Console.Write("And what?");
+                            string input2 = Console.ReadLine();
+                            Int32.TryParse(input2, out mul2);
+                            ans = mul1 * mul2;
+                            Console.WriteLine("The answer is " + ans);
+                        }
+                        else if (string.Equals(command, "divide"))
+                        {
+                            Console.Write("What to divide?");
+                            string input1 = Console.ReadLine();
+                            int div1, div2, ans;
+                            Int32.TryParse(input1, out div1);
+                            Console.Write("And what?");
+                            string input2 = Console.ReadLine();
+                            Int32.TryParse(input2, out div2);
+                            ans = div1 + div2;
                             Console.WriteLine("The answer is " + ans);
                         }
                         else if (string.Equals(command, "secure(add user)"))
