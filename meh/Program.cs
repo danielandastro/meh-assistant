@@ -97,7 +97,7 @@ namespace meh
                             Console.Write("And what?");
                             string input2 = Console.ReadLine();
                             Int32.TryParse(input2, out div2);
-                            ans = div1 + div2;
+                            ans = div1 / div2;
                             Console.WriteLine("The answer is " + ans);
                         }
                         else if (string.Equals(command, "secure(add user)"))
@@ -193,7 +193,7 @@ namespace meh
                             Console.Write("And what?");
                             string input2 = Console.ReadLine();
                             Int32.TryParse(input2, out div2);
-                            ans = div1 + div2;
+                            ans = div1 / div2;
                             Console.WriteLine("The answer is " + ans);
                         }
                         else if (string.Equals(command, "secure(add user)"))
