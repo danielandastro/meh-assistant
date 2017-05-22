@@ -7,7 +7,7 @@ namespace meh
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("MEH System Version 0.3");
+            Console.WriteLine("MEH System Version 0.4");
             Console.WriteLine("Loading Core System");
             Console.WriteLine("Declaring Startup Variables");
             String command, user, pass, str1, str2, secure, users = null;
