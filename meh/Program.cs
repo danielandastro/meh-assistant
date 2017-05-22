@@ -104,6 +104,7 @@ namespace meh
                         {
                             Console.WriteLine("Not supported right now");
                         }
+
                         else if (string.Equals(command, "exit"))
                         {
                             Console.WriteLine("Exiting");
