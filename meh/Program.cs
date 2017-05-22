@@ -27,7 +27,7 @@ namespace meh
                 secure_mode = false;
 
             }
-            else { Console.WriteLine("Invalid"); Console.ReadKey(); }
+            else { Console.WriteLine("Invalid"); Console.ReadKey(); return; }
             if (secure_mode == true)
 
 
