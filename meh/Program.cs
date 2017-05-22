@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace meh
 {
     class Program
 
     {
+        private static object startInfo;
+
         static void Main(string[] args)
         {
             Console.WriteLine("MEH System Version 0.4");
@@ -104,7 +107,24 @@ namespace meh
                         {
                             Console.WriteLine("Not supported right now");
                         }
+else if (command.Equals("define"))
+                        {
+                            Console.Write("Define What? ");
+                            String define;
+                            define = Console.ReadLine();
+                            Process p = new Process();
+                            p.StartInfo.FileName = "wn.exe";
+                            p.StartInfo.Arguments = define +" -holon -g" ;
+                            p.StartInfo.UseShellExecute = false;
+                            p.StartInfo.RedirectStandardOutput = true;
+                            p.Start();
 
+                            string output = p.StandardOutput.ReadToEnd();
+                            p.WaitForExit();
+
+                            Console.WriteLine("Output:");
+                            Console.WriteLine(output);
+                        }
                         else if (string.Equals(command, "exit"))
                         {
                             Console.WriteLine("Exiting");
@@ -220,6 +240,11 @@ namespace meh
 
             }
             }
+
+        private static void echo()
+        {
+            throw new NotImplementedException();
         }
+    }
     }
 
