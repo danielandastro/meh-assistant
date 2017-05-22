@@ -110,6 +110,7 @@ namespace meh
                             command = null; user = null; pass = null; str1 = null; str2 = null; secure = null; users = null;
                             return;
                         }
+
                         else
                         {
                             Console.WriteLine("What?");
