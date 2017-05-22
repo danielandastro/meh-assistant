@@ -121,7 +121,7 @@ else if (command.Equals("define"))
 
                             string output = p.StandardOutput.ReadToEnd();
                             p.WaitForExit();
-
+                            define = null;
                             Console.WriteLine("Output:");
                             Console.WriteLine(output);
                         }
@@ -220,6 +220,25 @@ else if (command.Equals("define"))
                         else if (string.Equals(command, "secure(add user)"))
                         {
                             Console.WriteLine("Error, system cannot process your request without confirming credentials. To confirm credentials, restart MEH system in secure mode");
+                        }
+
+                        else if (command.Equals("define"))
+                        {
+                            Console.Write("Define What? ");
+                            String define;
+                            define = Console.ReadLine();
+                            Process p = new Process();
+                            p.StartInfo.FileName = "wn.exe";
+                            p.StartInfo.Arguments = define + " -holon -g";
+                            p.StartInfo.UseShellExecute = false;
+                            p.StartInfo.RedirectStandardOutput = true;
+                            p.Start();
+
+                            string output = p.StandardOutput.ReadToEnd();
+                            p.WaitForExit();
+                            define = null;
+                            Console.WriteLine("Output:");
+                            Console.WriteLine(output);
                         }
                         else if (string.Equals(command, "exit"))
                         {
