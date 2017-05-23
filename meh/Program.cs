@@ -10,7 +10,7 @@ namespace meh
 
         static void Main(string[] args)
         {
-            Console.WriteLine("MEH System Version 0.4");
+            Console.WriteLine("MEH System Version 0.5");
             Console.WriteLine("Loading Core System");
             Console.WriteLine("Declaring Startup Variables");
             String command, user, pass, str1, str2, secure, users = null;
@@ -124,6 +124,11 @@ else if (command.Equals("define"))
                             define = null;
                             Console.WriteLine("Output:");
                             Console.WriteLine(output);
+                        }
+                        else if (string.Equals(command, "time") || string.Equals(command, "what is the time"))
+                        {
+                            string time = DateTime.Now.ToString("h:mm:ss tt");
+                            Console.WriteLine(time);
                         }
                         else if (string.Equals(command, "exit"))
                         {
@@ -240,6 +245,11 @@ else if (command.Equals("define"))
                             define = null;
                             Console.WriteLine("Output:");
                             Console.WriteLine(output);
+                        }
+                        else if (string.Equals(command, "time") || string.Equals(command, "what is the time"))
+                        {
+                            string time = DateTime.Now.ToString("h:mm:ss tt");
+                            Console.WriteLine(time);
                         }
                         else if (string.Equals(command, "exit"))
                         {

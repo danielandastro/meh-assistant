@@ -1,0 +1,9 @@
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\bin\Debug\netcoreapp1.1\meh.deps.json
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\bin\Debug\netcoreapp1.1\meh.runtimeconfig.json
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\bin\Debug\netcoreapp1.1\meh.runtimeconfig.dev.json
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\obj\Debug\netcoreapp1.1\meh.csprojResolveAssemblyReference.cache
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\obj\Debug\netcoreapp1.1\meh.AssemblyInfo.cs
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\bin\Debug\netcoreapp1.1\meh.dll
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\bin\Debug\netcoreapp1.1\meh.pdb
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\obj\Debug\netcoreapp1.1\meh.dll
+c:\users\danie\documents\visual studio 2017\Projects\meh\meh\obj\Debug\netcoreapp1.1\meh.pdb
