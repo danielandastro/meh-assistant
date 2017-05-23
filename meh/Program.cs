@@ -60,10 +60,10 @@ namespace meh
                             Console.Write("What to add?");
                             string input1 = Console.ReadLine();
                             double add1, add2, ans;
-                            add1=double.Parse(input1);
+                            add1 = double.Parse(input1);
                             Console.Write("And what?");
                             string input2 = Console.ReadLine();
-                            add2=double.Parse(input2);
+                            add2 = double.Parse(input2);
                             ans = add1 + add2;
                             Console.WriteLine("The answer is " + ans);
                         }
@@ -72,10 +72,10 @@ namespace meh
                             Console.Write("What to subtract?");
                             string input1 = Console.ReadLine();
                             double sub1, sub2, ans;
-                            sub1=double.Parse(input1);
+                            sub1 = double.Parse(input1);
                             Console.Write("And what?");
                             string input2 = Console.ReadLine();
-                            sub2=double.Parse(input2);
+                            sub2 = double.Parse(input2);
                             ans = sub1 - sub2;
                             Console.WriteLine("The answer is " + ans);
                         }
@@ -107,14 +107,14 @@ namespace meh
                         {
                             Console.WriteLine("Not supported right now");
                         }
-else if (command.Equals("define"))
+                        else if (command.Equals("define"))
                         {
                             Console.Write("Define What? ");
                             String define;
                             define = Console.ReadLine();
                             Process p = new Process();
                             p.StartInfo.FileName = "wn.exe";
-                            p.StartInfo.Arguments = define +" -holon -g" ;
+                            p.StartInfo.Arguments = define + " -holon -g";
                             p.StartInfo.UseShellExecute = false;
                             p.StartInfo.RedirectStandardOutput = true;
                             p.Start();
@@ -130,6 +130,23 @@ else if (command.Equals("define"))
                             string time = DateTime.Now.ToString("h:mm:ss tt");
                             Console.WriteLine(time);
                         }
+                        /*else if (string.Equals(command, "timer"))
+                        {
+                            int min, sec, totalsec, mintosec, milli;
+                            string strmin, strsec;
+                            Console.Write("Minutes: ");
+                            strmin = Console.ReadLine();
+                            Console.Write("Seconds: ");
+                            strsec = Console.ReadLine();
+                            sec = Int32.Parse(strsec);
+                            min = Int32.Parse(strmin);
+                            mintosec = min * 60;
+                            totalsec = mintosec + sec;
+                            milli = totalsec * 1000;
+                            System.Threading.Thread.Sleep(milli);
+                            Console.WriteLine("Time is Up");
+                        }*/
+
                         else if (string.Equals(command, "exit"))
                         {
                             Console.WriteLine("Exiting");
@@ -251,6 +268,22 @@ else if (command.Equals("define"))
                             string time = DateTime.Now.ToString("h:mm:ss tt");
                             Console.WriteLine(time);
                         }
+                        /*else if (string.Equals(command, "timer"))
+                       {
+                           int min, sec, totalsec, mintosec, milli;
+                           string strmin, strsec;
+                           Console.Write("Minutes: ");
+                           strmin = Console.ReadLine();
+                           Console.Write("Seconds: ");
+                           strsec = Console.ReadLine();
+                           sec = Int32.Parse(strsec);
+                           min = Int32.Parse(strmin);
+                           mintosec = min * 60;
+                           totalsec = mintosec + sec;
+                           milli = totalsec * 1000;
+                           System.Threading.Thread.Sleep(milli);
+                           Console.WriteLine("Time is Up");
+                       }*/
                         else if (string.Equals(command, "exit"))
                         {
                             Console.WriteLine("Exiting");
