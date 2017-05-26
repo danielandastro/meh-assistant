@@ -114,7 +114,7 @@ namespace meh
                             define = Console.ReadLine();
                             Process p = new Process();
                             p.StartInfo.FileName = "wn.exe";
-                            p.StartInfo.Arguments = define + " -holon -g";
+                            p.StartInfo.Arguments = define + " -synsn -g";
                             p.StartInfo.UseShellExecute = false;
                             p.StartInfo.RedirectStandardOutput = true;
                             p.Start();
@@ -252,7 +252,7 @@ namespace meh
                             define = Console.ReadLine();
                             Process p = new Process();
                             p.StartInfo.FileName = "wn.exe";
-                            p.StartInfo.Arguments = define + " -holon -g";
+                            p.StartInfo.Arguments = define + " -synsn -g";
                             p.StartInfo.UseShellExecute = false;
                             p.StartInfo.RedirectStandardOutput = true;
                             p.Start();
