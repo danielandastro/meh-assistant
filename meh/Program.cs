@@ -174,22 +174,8 @@ namespace meh
                 else
                 {
                     Console.WriteLine("What?");
-                } 
-
-            } }  
-
-    }   
-
-
-                    }
-                
-
-
-
-                
-
-
-
-
-    
-
+                }
+            }
+        }
+    }
+}
